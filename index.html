@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Count App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+body{
+    background: linear-gradient(lightblue , lightgreen );
+    background-repeat: no-repeat;
+    height: 98vh;
+}
+        button {
+            width: 200px;
+            height: 60px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        h1{
+            color: teal;
+            font-size: 50px;
+        }
+
+        .dd {
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 20px;
+            width: 100px;
+
+        }
+        .container{
+        padding-top: 300px;
+            width: 100%;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <center>
+<div class="container">
+    
+    
+    <button class="dd" onclick="lemath()">count</button>
+    <button onclick="lemath2()">countdown</button>
+    <br><br>
+</div>        
+<div class="child">
+
+        <h1 id="stuff">stuff:</h1>
+    </div>
+</center>
+
+    <script>
+        var count = 0;
+        function lemath() {
+            count++;
+            var stuff = document.getElementById('stuff');
+            stuff.innerHTML = "stuff: " + count
+        };
+        function lemath2() {
+            count--;
+            var stuff = document.getElementById('stuff');
+            stuff.innerHTML = "stuff: " + count
+        };
+    </script>
+</body>
+
+</html>
